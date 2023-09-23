@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fitness</string>
+    <string name="logo_discription"> main logo</string>
+    <string name="splash_screen_bg"> splash screeen bg</string>
+</resources>

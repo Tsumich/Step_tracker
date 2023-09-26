@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">Fitness</string>
+    <string name="app_name">GigiZaShagi</string>
+    <string name = "steps">Steps</string>
+    <string name = "goal">Цель</string>
+    <string name = "button_to_graphic">Посмотреть недельную активность</string>
     <string name="logo_discription"> main logo</string>
     <string name="splash_screen_bg"> splash screeen bg</string>
+    <string name="back"> Назад</string>
+    <string name="distance_title"> Примерно пройденное расстояние: </string>
 </resources>

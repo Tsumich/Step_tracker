@@ -6,28 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Счетчик шагов"
-        android:layout_margin="20dp"
-        android:textSize="20sp"
-        android:textFontWeight="800"
-        android:textColor="@color/black"
-        />
-
-
 
     <RelativeLayout
+        android:id="@+id/layer_with_progressbar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="500dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        >
         <TextView
             android:id="@+id/steps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Steps"
+            android:text="@string/steps"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:textSize="28dp"/>
@@ -50,10 +40,44 @@
             android:layout_height="300dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
+            android:layout_marginTop="150dp"
             >
         </ProgressBar>
 
+        <Button
+            android:id="@+id/button_to_graph"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_to_graphic"
+            android:layout_centerHorizontal="true"
+            />
+
+
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layer_with_progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/distance_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/distance_title"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distance_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:id="@+id/distance_counter"
+            android:textSize="20dp"
+            android:text="000 км"/>
+    </RelativeLayout>
+
 
 
 

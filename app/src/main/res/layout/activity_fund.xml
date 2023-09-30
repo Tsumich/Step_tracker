@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_orange">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/fund_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:text="Choose the fund"
+            android:textSize="24dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/fund_1"
+            android:text="НИКА"
+            android:layout_below="@+id/fund_title"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="@drawable/oval_button"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/fund_2"
+            android:text="РЭй"
+            android:layout_below="@+id/fund_1"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="@drawable/oval_button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

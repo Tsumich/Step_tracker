@@ -1,10 +1,16 @@
 <resources>
-    <string name="app_name">GigiZaShagi</string>
-    <string name = "steps">Steps</string>
-    <string name = "goal">Цель</string>
-    <string name = "button_to_graphic">Посмотреть недельную активность</string>
+    <string name="app_name">Save The Paws</string>
+    <string name="steps">Steps</string>
+    <string name="goal">Цель</string>
+    <string name="button_to_graphic">Посмотреть недельную активность</string>
     <string name="logo_discription"> main logo</string>
     <string name="splash_screen_bg"> splash screeen bg</string>
     <string name="back"> Назад</string>
     <string name="distance_title"> Примерно пройденное расстояние: </string>
+    <string-array name="work">
+        <item>1 division</item>
+        <item>2 division</item>
+        <item>3 division</item>
+        <item>4 division</item>
+    </string-array>
 </resources>

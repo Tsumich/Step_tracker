@@ -6,13 +6,14 @@
     android:toDegrees="270">
     <shape
         android:shape="ring"
-        android:innerRadiusRatio="2.5"
-        android:thickness="100dp"
+        android:innerRadiusRatio="3.5"
+        android:thickness="3dp"
         android:useLevel="true">
+
         <gradient
             android:angle="0"
-            android:endColor="@color/black"
-            android:startColor="@color/white"
+            android:endColor="@color/btn_green"
+            android:startColor="@color/progres_bar_main"
             android:type="sweep"
             android:useLevel="false">
         </gradient>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/bg_orange">
+    <RelativeLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/log_layer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/log_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:layout_marginBottom="20dp"
+            android:textSize="42dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:textColor="@color/black"
+            android:shadowRadius="5" />
+        <TextView
+            android:id="@+id/log_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in your account"
+            android:textColor="@color/black"
+            android:layout_below="@id/log_title"
+            android:textSize="24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/log_layer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp">
+        <EditText
+            android:id="@+id/log_username"
+            android:layout_width="200dp"
+            android:textColor="@color/black"
+            android:textColorHint="#736565"
+            android:layout_height="50dp"
+            android:hint="username"/>
+
+        <EditText
+            android:id="@+id/log_password"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:textColorHint="#736565"
+            android:layout_below="@+id/log_username"
+            android:hint="password"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/log_button_signIn"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/log_password"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval_button"
+            android:text="log in"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

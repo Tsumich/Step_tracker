@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bg_orange">#E9CBA6</color>
+    <color name="btn_green">#354D33</color>
+    <color name="progres_bar_main">#B47849</color>
 </resources>

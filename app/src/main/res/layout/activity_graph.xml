@@ -1,24 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".GraphActivity"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
-    android:background="#EDD6D6"
+    android:background="@color/bg_orange"
     >
 
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/histogram"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+    <RelativeLayout
+        android:id="@+id/graph_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_centerHorizontal="true"
+            android:id="@+id/histogram"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:background="#EDD6D6"
+            />
+    </RelativeLayout>
 
-        />
-    <Button
-        android:id="@+id/btn_to_main_screen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/back"/>
+    <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/layer_data"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/check_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="empty..."
+            android:textSize="20dp"
+            android:textColor="@color/progres_bar_main"/>
+            <ImageView
+                android:id="@+id/count_50k"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/count_5k"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/count_100k"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/count_50k"
+                android:src="@drawable/count_10k"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/count_150k"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/count_100k"
+                android:src="@drawable/count_15k"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/count_250k"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/count_150k"
+                android:src="@drawable/count_20k"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/count_200k"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/count_150k"
+                android:src="@drawable/count_20k"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/count_300k"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/count_200k"
+                android:src="@drawable/count_30k"
+                android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer_data"
+        android:layout_below="@+id/graph_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textColor="@color/black"
+            android:text="000000000"
+            >
+        </TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/button_to_pay"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_title"
+            android:text="Transfer steps?"
+            android:textColor="@color/white"
+            android:background="@drawable/oval_button"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="000000000"
+            android:textColor="@color/black"
+            android:layout_below="@+id/button_to_pay">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="#9E8FAA"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="Ваши накопленные шаги равняются 000000 рупий"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer_q_to_pay"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="#B59D81"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/q_to_pay"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00000000000000"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/money_to_pay"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q_to_pay"
+            android:layout_centerInParent="true"
+            android:text="000000000"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="34dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/oval_button"
+            android:text="YES"
+            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/oval_button"
+            android:text="NO"
+            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -10,33 +10,36 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="140dp"
-        android:layout_height="145dp"
+        android:layout_width="146dp"
+        android:layout_height="204dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="136dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="126dp"
+        android:alpha="100"
         android:contentDescription="@string/logo_discription"
-        android:src="@drawable/logo_man" />
+        android:src="@drawable/logo"
+        android:background="@android:color/transparent"/>
 
     <TextView
         android:id="@+id/appname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="45dp"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        android:shadowColor="#511414"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="15"
+        android:layout_width="168dp"
+        android:layout_height="242dp"
+        android:layout_below="@+id/logo"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="350dp"
-        />
+        android:layout_marginBottom="158dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:gravity="center"
+        android:shadowRadius="15"
+        android:text="@string/app_name"
+        android:textColor="#FFF"
+        android:textSize="55dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
